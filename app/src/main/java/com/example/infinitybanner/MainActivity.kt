@@ -18,7 +18,7 @@ import kotlin.math.E
 
 class MainActivity : AppCompatActivity() {
     val binding by lazy{ActivityMainBinding.inflate(layoutInflater)}
-    private val time=1500.toLong()
+    private val time=1500L
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity() {
                 autoScrollStart(time)
             }
         }
-    }
+    }//코루틴 사용.. 같은 블로그...
 
     override fun onResume() {
         super.onResume()
